@@ -6,12 +6,12 @@ import org.testng.annotations.Test;
 
 public class Research_Development extends BaseTest {
 
-    @Test(description = "Testing whether we are on right page")
+    @Test(description = "TC-1")
     public void checkWebPage() {
         Assert.assertEquals(vacancies.getTitleText(), "Build your career at Veeam", "Title is incorrect");
     }
 
-    @Test(description = "Testing vacancies for Research&Develompent department")
+    @Test(description = "TC-2")
     public void countVacancies() {
         vacancies.clearFilters();
         vacancies.clickOnDepartmentLanguage(0);
